@@ -1,0 +1,16 @@
+customer_id,plan_tier,monthly_revenue_usd,tenure_months,support_tickets,nps_score,storage_gb,churned
+CUST-1001,Enterprise,1250,28,1,9,4500,0
+CUST-1002,Pro,240,14,3,8,820,0
+CUST-1003,Starter,49,4,7,4,110,1
+CUST-1004,Starter,49,2,9,3,85,1
+CUST-1005,Enterprise,1800,36,0,10,9200,0
+CUST-1006,Pro,320,18,2,7,1150,0
+CUST-1007,Pro,240,6,8,5,420,1
+CUST-1008,Enterprise,2100,42,2,9,12400,0
+CUST-1009,Starter,49,1,6,2,40,1
+CUST-1010,Pro,390,22,1,8,1600,0
+CUST-1011,Starter,49,8,3,7,210,0
+CUST-1012,Enterprise,1500,19,4,6,6100,0
+CUST-1013,Pro,290,11,5,5,780,1
+CUST-1014,Enterprise,3200,50,1,10,18500,0
+CUST-1015,Starter,49,3,8,3,95,1

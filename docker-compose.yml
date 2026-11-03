@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  blast-radius-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: blast_radius_zero_app
+    restart: unless-stopped
+    ports:
+      - "80:8000"
+      - "8000:8000"
+    volumes:
+      # Docker socket mount allows orchestrator to manage isolated sandbox containers on Vultr VM
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /tmp/blast_radius_sandboxes:/tmp/blast_radius_sandboxes
+    environment:
+      - VULTR_INFERENCE_API_KEY=${VULTR_INFERENCE_API_KEY}
+      - VULTR_INFERENCE_BASE_URL=https://api.vultrinference.com/v1
+      - VULTR_MODEL=${VULTR_MODEL:-zephyr-7b-beta}
+      - PORT=8000

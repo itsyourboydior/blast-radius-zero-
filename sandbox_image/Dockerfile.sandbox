@@ -1,0 +1,24 @@
+# Minimal, hardened execution sandbox image for Vultr Cloud Compute
+FROM python:3.11-slim
+
+# Prevent python from buffering stdout/stderr
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONDONTWRITEBYTECODE=1
+
+# Install data analytics packages
+RUN pip install --no-cache-dir pandas matplotlib seaborn numpy scipy
+
+# Create unprivileged non-root user
+RUN groupadd -g 1000 sandboxuser && \
+    useradd -u 1000 -g sandboxuser -m -s /bin/bash sandboxuser
+
+# Create standard isolated mount directories
+RUN mkdir -p /data /output /app && \
+    chown -R sandboxuser:sandboxuser /output /app
+
+# Switch to non-root user
+USER sandboxuser
+WORKDIR /app
+
+# Safe default entrypoint
+CMD ["python", "--version"]

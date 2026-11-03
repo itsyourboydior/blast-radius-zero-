@@ -1,0 +1,21 @@
+timestamp,instance_id,region,vcpu,ram_gb,cpu_util_pct,mem_util_pct,tx_mbps,rx_mbps,cost_hourly,status
+2026-11-03 00:00:00,vultr-vm-01,EWR (New Jersey),4,16,42.5,58.2,120.4,310.2,0.048,active
+2026-11-03 01:00:00,vultr-vm-01,EWR (New Jersey),4,16,68.9,71.0,240.1,512.6,0.048,active
+2026-11-03 02:00:00,vultr-vm-01,EWR (New Jersey),4,16,91.4,86.5,410.8,820.5,0.048,active
+2026-11-03 03:00:00,vultr-vm-01,EWR (New Jersey),4,16,84.2,82.1,380.0,790.3,0.048,active
+2026-11-03 00:00:00,vultr-vm-02,FRA (Frankfurt),8,32,35.1,44.0,95.0,210.0,0.096,active
+2026-11-03 01:00:00,vultr-vm-02,FRA (Frankfurt),8,32,48.6,52.3,180.2,400.1,0.096,active
+2026-11-03 02:00:00,vultr-vm-02,FRA (Frankfurt),8,32,77.3,79.8,320.5,650.0,0.096,active
+2026-11-03 03:00:00,vultr-vm-02,FRA (Frankfurt),8,32,88.9,85.2,390.0,710.4,0.096,active
+2026-11-03 00:00:00,vultr-vm-03,NRT (Tokyo),2,8,22.0,30.5,45.2,110.0,0.024,active
+2026-11-03 01:00:00,vultr-vm-03,NRT (Tokyo),2,8,38.4,41.2,88.0,195.4,0.024,active
+2026-11-03 02:00:00,vultr-vm-03,NRT (Tokyo),2,8,55.1,59.0,140.2,305.8,0.024,active
+2026-11-03 03:00:00,vultr-vm-03,NRT (Tokyo),2,8,61.7,64.3,165.0,340.1,0.024,active
+2026-11-03 00:00:00,vultr-vm-04,SJC (Silicon Valley),16,64,65.3,60.1,450.0,920.0,0.192,active
+2026-11-03 01:00:00,vultr-vm-04,SJC (Silicon Valley),16,64,82.4,78.5,680.1,1350.2,0.192,active
+2026-11-03 02:00:00,vultr-vm-04,SJC (Silicon Valley),16,64,96.8,92.1,890.4,1780.0,0.192,active
+2026-11-03 03:00:00,vultr-vm-04,SJC (Silicon Valley),16,64,93.2,89.4,810.0,1620.5,0.192,active
+2026-11-03 00:00:00,vultr-vm-05,LHR (London),4,16,18.5,25.0,40.1,95.0,0.048,active
+2026-11-03 01:00:00,vultr-vm-05,LHR (London),4,16,29.1,33.2,65.4,140.0,0.048,active
+2026-11-03 02:00:00,vultr-vm-05,LHR (London),4,16,51.8,55.0,110.2,250.7,0.048,active
+2026-11-03 03:00:00,vultr-vm-05,LHR (London),4,16,73.4,70.2,190.5,410.2,0.048,active
