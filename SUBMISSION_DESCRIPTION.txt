@@ -1,0 +1,11 @@
+Blast Radius Zero solves the enterprise dilemma of executing untrusted AI-generated code by providing a zero-trust platform engineered for Vultr Cloud Compute and Vultr Serverless Inference. When a user prompts an analytical question on a dataset, the FastAPI orchestrator synthesizes Python analysis scripts that execute strictly within an ephemeral, throwaway Docker container enforcing four non-negotiable containment controls.
+
+These controls ensure:
+1. Zero Network Egress (--network none): Complete socket and DNS isolation prevents any unauthorized outbound data exfiltration.
+2. Scrubbed Secret Hygiene: Host environment credentials, cloud tokens, and API keys are completely stripped before execution.
+3. Read-Only Storage Mounting (/data:ro): Source datasets remain immutable, protecting them from corruption, malicious tampering, or ransomware encryption.
+4. Hardware Resource Limits: Memory is capped at 256MB, CPU usage is limited to 1.0 core, and an autonomous execution watchdog kills runaway processes exceeding 15 seconds.
+
+Instead of speculative chat responses, the agent returns verifiable "receipts": hard numbers printed to standard output, summary tables, and high-resolution Matplotlib visualizations. If an execution error occurs, an integrated self-healing loop automatically feeds the traceback back to Vultr Serverless Inference (api.vultrinference.com/v1) to patch and re-execute the code until verified.
+
+The application deploys in one click to a Vultr Cloud Compute VM via automated setup scripts, transforming risky AI code execution into a hardened, enterprise-grade production product with strictly zero blast radius.
